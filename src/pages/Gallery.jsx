@@ -53,9 +53,9 @@ export default function Gallery(props) {
 	// Display the token gallery
 	return (
 		<div className="page gallery">
-			<h2>Gallery Page</h2>
+			<h1>Gallery</h1>
 			<br/>
-			Total Supply: {totalSupply}
+			<h2>Total Supply:</h2> {totalSupply}
 			{tokenURIs.map((uri, idx) => (
 				<div key={idx}>
 					<img src={uri} alt={'token '+idx} />

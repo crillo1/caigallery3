@@ -1,7 +1,7 @@
 html, body, #root{
-	--bkgColor: #1b1b1f;
+	--bkgColor: #448047;
 	--txtColor: #eee;
-	--bkgColorHead: #2f2e38;
+	--bkgColorHead: #3dcf49;
 	--txtColorHead: #eee;
 	--bkgColorCallout: #e3e3e8;
 	--heightHead: 50px;
@@ -11,6 +11,7 @@ html, body, #root{
 	height: 100%;
 	background: var(--bkgColor);
 	color: var(--txtColor);
+	font-family: monospace;
 }
 
 a{
@@ -24,6 +25,7 @@ a{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	font-family: monospace;
 }
 
 header{
@@ -46,8 +48,8 @@ header{
 
 button,
 a.button{
-	background-color: var(--txtColorHead);
-	color: var(--bkgColorHead);
+	background-color: #A336B9;
+	color: white;
 	box-shadow: inset 1px 3px 25px 0px rgb(10 18 45 / 50%);
 	font-size: inherit;
 	font-weight: bold;
@@ -56,6 +58,7 @@ a.button{
 	border-radius: 5px;
 	cursor: pointer;
 	text-decoration: none;
+	font-family: monospace;
 }
 
 /*
@@ -68,14 +71,45 @@ header{
 	z-index: 100;
 }
 
-header #logo{
-	margin: 0;
-	float:left;
-	font-size: 2em;
-	margin: 10px 1em;
-	height: 30px;
-	color: var(--txtColorHead);
-}
+.home .header .socialMedias {
+	width: 200px;
+	text-align: left;
+	align-items: left;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  @media (max-width: 765px) {
+	.home .header .socialMedias {
+		width: 50%;
+		text-align: center;
+		margin: 15px auto;
+	}
+  }
+  
+  .home .header .socialMedias a {
+	margin: 0 15px;
+	color:white;
+  }
+  
+  @media (max-width: 765px) {
+	.home .header .socialMedias a {
+	  margin: 0 15px;
+	  visibility: hidden;
+	}
+  }
+  
+  .home .header .socialMedias img {
+	width: 15%;
+	text-align: left;
+  }
+  
+  @media (max-width: 765px) {
+	.home .header .socialMedias img {
+	  width: 20%;
+	  /* margin-left: -35px; */
+	}
+  }
 
 header a{
 	color: var(--txtColorHead);
@@ -96,13 +130,14 @@ header nav ul{
 header nav ul li{
 	float:left;
 	margin-right: 20px;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 /*
 	LOGIN
 */
 button.login{
-	font-size: 14px;
+	font-size: 17px;
   margin-top: -16px;
+  font-family: monospace;
 }
